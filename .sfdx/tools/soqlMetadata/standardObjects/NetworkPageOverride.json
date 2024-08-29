@@ -1,0 +1,299 @@
+{
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Experience Page Override Id",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Deleted",
+      "name": "IsDeleted",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Created Date",
+      "name": "CreatedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Created By ID",
+      "name": "CreatedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "CreatedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Last Modified Date",
+      "name": "LastModifiedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Last Modified By ID",
+      "name": "LastModifiedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "LastModifiedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "System Modstamp",
+      "name": "SystemModstamp",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Network ID",
+      "name": "NetworkId",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "Network"
+      ],
+      "relationshipName": "Network",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Page Override Type",
+      "name": "OverrideType",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Inactive Site Home Page",
+          "validFor": null,
+          "value": "InMaintenance"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Authorization Required Page (401)",
+          "validFor": null,
+          "value": "LoginRequired"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Page Not Found Page (404)",
+          "validFor": null,
+          "value": "FileNotFound"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Generic Error Page",
+          "validFor": null,
+          "value": "Exception"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Maintenance Page(500/503)",
+          "validFor": null,
+          "value": "UnderConstruction"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Limit Exceeded Page (509)",
+          "validFor": null,
+          "value": "BandwidthExceeded"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Site Template",
+          "validFor": null,
+          "value": "SiteTemplate"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Robots Configuration Page",
+          "validFor": null,
+          "value": "RobotsTxt"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Change Password Page",
+          "validFor": null,
+          "value": "ChangePassword"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "My Profile Page",
+          "validFor": null,
+          "value": "MyProfile"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Self Registration Page",
+          "validFor": null,
+          "value": "SelfReg"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Forgot Password Page",
+          "validFor": null,
+          "value": "ForgotPassword"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Page Override Setting",
+      "name": "OverrideSetting",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Designer"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "VisualForce"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Standard"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Configurable"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    }
+  ],
+  "label": "Experience Page Override",
+  "childRelationships": [],
+  "custom": false,
+  "name": "NetworkPageOverride",
+  "queryable": true
+}

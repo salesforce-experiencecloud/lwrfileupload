@@ -1,0 +1,2543 @@
+{
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Name",
+      "name": "Name",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Voice Call ID",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Deleted",
+      "name": "IsDeleted",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Created By ID",
+      "name": "CreatedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "CreatedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Created Date",
+      "name": "CreatedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Last Modified Date",
+      "name": "LastModifiedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Last Modified By ID",
+      "name": "LastModifiedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "LastModifiedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "System Modstamp",
+      "name": "SystemModstamp",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Last Viewed Date",
+      "name": "LastViewedDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Last Referenced Date",
+      "name": "LastReferencedDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Owner ID",
+      "name": "OwnerId",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "Group",
+        "User"
+      ],
+      "relationshipName": "Owner",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Call Started",
+      "name": "CallStartDateTime",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Call Ended",
+      "name": "CallEndDateTime",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Caller Number",
+      "name": "FromPhoneNumber",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "phone"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Recipient Number",
+      "name": "ToPhoneNumber",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "phone"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Call Duration",
+      "name": "CallDurationInSeconds",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "int"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Vendor Call Key",
+      "name": "VendorCallKey",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Price",
+      "name": "Price",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "double"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Currency Code",
+      "name": "CurrencyCode",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "AED - UAE Dirham",
+          "validFor": null,
+          "value": "AED"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "AFN - Afghanistan Afghani (New)",
+          "validFor": null,
+          "value": "AFN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "ALL - Albanian Lek",
+          "validFor": null,
+          "value": "ALL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "AMD - Armenian Dram",
+          "validFor": null,
+          "value": "AMD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "ANG - Neth Antilles Guilder",
+          "validFor": null,
+          "value": "ANG"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "AOA - Angola Kwanza",
+          "validFor": null,
+          "value": "AOA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "ARS - Argentine Peso",
+          "validFor": null,
+          "value": "ARS"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "AUD - Australian Dollar",
+          "validFor": null,
+          "value": "AUD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "AWG - Aruba Florin",
+          "validFor": null,
+          "value": "AWG"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "AZN - Azerbaijan Manat",
+          "validFor": null,
+          "value": "AZN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "BAM - Convertible Marks",
+          "validFor": null,
+          "value": "BAM"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "BBD - Barbados Dollar",
+          "validFor": null,
+          "value": "BBD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "BDT - Bangladesh Taka",
+          "validFor": null,
+          "value": "BDT"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "BGN - Bulgarian Lev",
+          "validFor": null,
+          "value": "BGN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "BHD - Bahraini Dinar",
+          "validFor": null,
+          "value": "BHD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "BIF - Burundi Franc",
+          "validFor": null,
+          "value": "BIF"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "BMD - Bermuda Dollar",
+          "validFor": null,
+          "value": "BMD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "BND - Brunei Dollar",
+          "validFor": null,
+          "value": "BND"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "BOB - Bolivian Boliviano",
+          "validFor": null,
+          "value": "BOB"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "BOV - Bolivia Mvdol",
+          "validFor": null,
+          "value": "BOV"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "BRL - Brazilian Real",
+          "validFor": null,
+          "value": "BRL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "BSD - Bahamian Dollar",
+          "validFor": null,
+          "value": "BSD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "BTN - Bhutan Ngultrum",
+          "validFor": null,
+          "value": "BTN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "BWP - Botswana Pula",
+          "validFor": null,
+          "value": "BWP"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "BYN - Belarusian Ruble",
+          "validFor": null,
+          "value": "BYN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "BYR - Belarusian Ruble",
+          "validFor": null,
+          "value": "BYR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "BZD - Belize Dollar",
+          "validFor": null,
+          "value": "BZD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "CAD - Canadian Dollar",
+          "validFor": null,
+          "value": "CAD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "CDF - Franc Congolais",
+          "validFor": null,
+          "value": "CDF"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "CHF - Swiss Franc",
+          "validFor": null,
+          "value": "CHF"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "CLF - Unidades de fomento",
+          "validFor": null,
+          "value": "CLF"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "CLP - Chilean Peso",
+          "validFor": null,
+          "value": "CLP"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "CNH - Chinese Yuan (Offshore)",
+          "validFor": null,
+          "value": "CNH"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "CNY - Chinese Yuan",
+          "validFor": null,
+          "value": "CNY"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "COP - Colombian Peso",
+          "validFor": null,
+          "value": "COP"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "CRC - Costa Rica Colon",
+          "validFor": null,
+          "value": "CRC"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "CUC - Cuban Peso Convertible",
+          "validFor": null,
+          "value": "CUC"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "CVE - Cape Verde Escudo",
+          "validFor": null,
+          "value": "CVE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "CZK - Czech Koruna",
+          "validFor": null,
+          "value": "CZK"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "DJF - Dijibouti Franc",
+          "validFor": null,
+          "value": "DJF"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "DKK - Danish Krone",
+          "validFor": null,
+          "value": "DKK"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "DOP - Dominican Peso",
+          "validFor": null,
+          "value": "DOP"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "DZD - Algerian Dinar",
+          "validFor": null,
+          "value": "DZD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "EEK - Estonian Kroon",
+          "validFor": null,
+          "value": "EEK"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "EGP - Egyptian Pound",
+          "validFor": null,
+          "value": "EGP"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "ERN - Eritrea Nakfa",
+          "validFor": null,
+          "value": "ERN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "ETB - Ethiopian Birr",
+          "validFor": null,
+          "value": "ETB"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "EUR - Euro",
+          "validFor": null,
+          "value": "EUR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "FJD - Fiji Dollar",
+          "validFor": null,
+          "value": "FJD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "FKP - Falkland Islands Pound",
+          "validFor": null,
+          "value": "FKP"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "GBP - British Pound",
+          "validFor": null,
+          "value": "GBP"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "GBT - Zimbabwe Gold Back Digital Token",
+          "validFor": null,
+          "value": "GBT"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "GEL - Georgia Lari",
+          "validFor": null,
+          "value": "GEL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "GHS - Ghanaian Cedi",
+          "validFor": null,
+          "value": "GHS"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "GIP - Gibraltar Pound",
+          "validFor": null,
+          "value": "GIP"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "GMD - Gambian Dalasi",
+          "validFor": null,
+          "value": "GMD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "GNF - Guinean Franc",
+          "validFor": null,
+          "value": "GNF"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "GTQ - Guatemala Quetzal",
+          "validFor": null,
+          "value": "GTQ"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "GYD - Guyana Dollar",
+          "validFor": null,
+          "value": "GYD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "HKD - Hong Kong Dollar",
+          "validFor": null,
+          "value": "HKD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "HNL - Honduras Lempira",
+          "validFor": null,
+          "value": "HNL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "HRK - Kuna",
+          "validFor": null,
+          "value": "HRK"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "HTG - Haiti Gourde",
+          "validFor": null,
+          "value": "HTG"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "HUF - Hungarian Forint",
+          "validFor": null,
+          "value": "HUF"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "IDR - Indonesian Rupiah",
+          "validFor": null,
+          "value": "IDR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "ILS - Israeli Shekel",
+          "validFor": null,
+          "value": "ILS"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "INR - Indian Rupee",
+          "validFor": null,
+          "value": "INR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "IQD - Iraqi Dinar",
+          "validFor": null,
+          "value": "IQD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "ISK - Iceland Krona",
+          "validFor": null,
+          "value": "ISK"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "JMD - Jamaican Dollar",
+          "validFor": null,
+          "value": "JMD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "JOD - Jordanian Dinar",
+          "validFor": null,
+          "value": "JOD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "JPY - Japanese Yen",
+          "validFor": null,
+          "value": "JPY"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "KES - Kenyan Shilling",
+          "validFor": null,
+          "value": "KES"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "KGS - Kyrgyzstan Som",
+          "validFor": null,
+          "value": "KGS"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "KHR - Cambodia Riel",
+          "validFor": null,
+          "value": "KHR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "KMF - Comorian Franc",
+          "validFor": null,
+          "value": "KMF"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "KRW - Korean Won",
+          "validFor": null,
+          "value": "KRW"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "KWD - Kuwaiti Dinar",
+          "validFor": null,
+          "value": "KWD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "KYD - Cayman Islands Dollar",
+          "validFor": null,
+          "value": "KYD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "KZT - Kazakhstan Tenge",
+          "validFor": null,
+          "value": "KZT"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "LAK - Lao Kip",
+          "validFor": null,
+          "value": "LAK"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "LBP - Lebanese Pound",
+          "validFor": null,
+          "value": "LBP"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "LKR - Sri Lanka Rupee",
+          "validFor": null,
+          "value": "LKR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "LRD - Liberian Dollar",
+          "validFor": null,
+          "value": "LRD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "LSL - Lesotho Loti",
+          "validFor": null,
+          "value": "LSL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "LYD - Libyan Dinar",
+          "validFor": null,
+          "value": "LYD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "MAD - Moroccan Dirham",
+          "validFor": null,
+          "value": "MAD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "MDL - Moldovan Leu",
+          "validFor": null,
+          "value": "MDL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "MGA - Malagasy Ariary",
+          "validFor": null,
+          "value": "MGA"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "MKD - Macedonian Denar",
+          "validFor": null,
+          "value": "MKD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "MMK - Myanmar Kyat",
+          "validFor": null,
+          "value": "MMK"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "MNT - Mongolian Tugrik",
+          "validFor": null,
+          "value": "MNT"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "MOP - Macau Pataca",
+          "validFor": null,
+          "value": "MOP"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "MRO - Mauritanian Ougulya",
+          "validFor": null,
+          "value": "MRO"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "MRU - Mauritanian Ougulya",
+          "validFor": null,
+          "value": "MRU"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "MUR - Mauritius Rupee",
+          "validFor": null,
+          "value": "MUR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "MVR - Maldives Rufiyaa",
+          "validFor": null,
+          "value": "MVR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "MWK - Malawi Kwacha",
+          "validFor": null,
+          "value": "MWK"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "MXN - Mexican Peso",
+          "validFor": null,
+          "value": "MXN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "MXV - Mexican Unidad de Inversion (UDI)",
+          "validFor": null,
+          "value": "MXV"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "MYR - Malaysian Ringgit",
+          "validFor": null,
+          "value": "MYR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "MZN - Mozambique New Metical",
+          "validFor": null,
+          "value": "MZN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "NAD - Namibian Dollar",
+          "validFor": null,
+          "value": "NAD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "NGN - Nigerian Naira",
+          "validFor": null,
+          "value": "NGN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "NIO - Nicaragua Cordoba",
+          "validFor": null,
+          "value": "NIO"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "NOK - Norwegian Krone",
+          "validFor": null,
+          "value": "NOK"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "NPR - Nepalese Rupee",
+          "validFor": null,
+          "value": "NPR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "NZD - New Zealand Dollar",
+          "validFor": null,
+          "value": "NZD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "OMR - Omani Rial",
+          "validFor": null,
+          "value": "OMR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "PAB - Panama Balboa",
+          "validFor": null,
+          "value": "PAB"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "PEN - Peruvian Sol",
+          "validFor": null,
+          "value": "PEN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "PGK - Papua New Guinea Kina",
+          "validFor": null,
+          "value": "PGK"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "PHP - Philippine Peso",
+          "validFor": null,
+          "value": "PHP"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "PKR - Pakistani Rupee",
+          "validFor": null,
+          "value": "PKR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "PLN - Polish Zloty",
+          "validFor": null,
+          "value": "PLN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "PYG - Paraguayan Guarani",
+          "validFor": null,
+          "value": "PYG"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "QAR - Qatar Rial",
+          "validFor": null,
+          "value": "QAR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "RON - Romanian Leu",
+          "validFor": null,
+          "value": "RON"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "RSD - Serbian Dinar",
+          "validFor": null,
+          "value": "RSD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "RUB - Russian Rouble",
+          "validFor": null,
+          "value": "RUB"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "RWF - Rwanda Franc",
+          "validFor": null,
+          "value": "RWF"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "SAR - Saudi Arabian Riyal",
+          "validFor": null,
+          "value": "SAR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "SBD - Solomon Islands Dollar",
+          "validFor": null,
+          "value": "SBD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "SCR - Seychelles Rupee",
+          "validFor": null,
+          "value": "SCR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "SDG - Sudanese Pound",
+          "validFor": null,
+          "value": "SDG"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "SEK - Swedish Krona",
+          "validFor": null,
+          "value": "SEK"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "SGD - Singapore Dollar",
+          "validFor": null,
+          "value": "SGD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "SHP - St Helena Pound",
+          "validFor": null,
+          "value": "SHP"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "SLE - Sierra Leone Leone",
+          "validFor": null,
+          "value": "SLE"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "SLL - Sierra Leone Leone",
+          "validFor": null,
+          "value": "SLL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "SOS - Somali Shilling",
+          "validFor": null,
+          "value": "SOS"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "SRD - Surinam Dollar",
+          "validFor": null,
+          "value": "SRD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "SSP - South Sudan Pound",
+          "validFor": null,
+          "value": "SSP"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "STD - São Tomé and Príncipe Dobra",
+          "validFor": null,
+          "value": "STD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "STN - São Tomé and Príncipe Dobra",
+          "validFor": null,
+          "value": "STN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "SZL - Eswatini Lilageni",
+          "validFor": null,
+          "value": "SZL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "THB - Thai Baht",
+          "validFor": null,
+          "value": "THB"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "TJS - Tajik Somoni",
+          "validFor": null,
+          "value": "TJS"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "TMT - Turkmenistan New Manat",
+          "validFor": null,
+          "value": "TMT"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "TND - Tunisian Dinar",
+          "validFor": null,
+          "value": "TND"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "TOP - Tonga Pa'anga",
+          "validFor": null,
+          "value": "TOP"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "TRY - Turkish Lira (New)",
+          "validFor": null,
+          "value": "TRY"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "TTD - Trinidad&Tobago Dollar",
+          "validFor": null,
+          "value": "TTD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "TWD - Taiwan Dollar",
+          "validFor": null,
+          "value": "TWD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "TZS - Tanzanian Shilling",
+          "validFor": null,
+          "value": "TZS"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "UAH - Ukraine Hryvnia",
+          "validFor": null,
+          "value": "UAH"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "UGX - Ugandan Shilling",
+          "validFor": null,
+          "value": "UGX"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "USD - U.S. Dollar",
+          "validFor": null,
+          "value": "USD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "UYU - Uruguayan Peso",
+          "validFor": null,
+          "value": "UYU"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "UZS - Uzbekistan Sum",
+          "validFor": null,
+          "value": "UZS"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "VEF - Venezuelan Bolivar Fuerte",
+          "validFor": null,
+          "value": "VEF"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "VES - Venezuelan Bolívar Soberano",
+          "validFor": null,
+          "value": "VES"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "VND - Vietnam Dong",
+          "validFor": null,
+          "value": "VND"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "VUV - Vanuatu Vatu",
+          "validFor": null,
+          "value": "VUV"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "WST - Samoa Tala",
+          "validFor": null,
+          "value": "WST"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "XAF - CFA Franc (BEAC)",
+          "validFor": null,
+          "value": "XAF"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "XCD - East Caribbean Dollar",
+          "validFor": null,
+          "value": "XCD"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "XCG - Caribbean Guilder",
+          "validFor": null,
+          "value": "XCG"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "XOF - CFA Franc (BCEAO)",
+          "validFor": null,
+          "value": "XOF"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "XPF - Pacific Franc",
+          "validFor": null,
+          "value": "XPF"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "YER - Yemen Riyal",
+          "validFor": null,
+          "value": "YER"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "ZAR - South African Rand",
+          "validFor": null,
+          "value": "ZAR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "ZMW - Zambian Kwacha (New)",
+          "validFor": null,
+          "value": "ZMW"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "ZWG - Zimbabwe Gold",
+          "validFor": null,
+          "value": "ZWG"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "ZWL - Zimbabwe Dollar",
+          "validFor": null,
+          "value": "ZWL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "ZiG - Zimbabwe Gold",
+          "validFor": null,
+          "value": "ZIG"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Call Status",
+      "name": "CallDisposition",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Call Type",
+      "name": "CallType",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Internal",
+          "validFor": null,
+          "value": "Internal"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Inbound",
+          "validFor": null,
+          "value": "Inbound"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Outbound",
+          "validFor": null,
+          "value": "Outbound"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Coach",
+          "validFor": null,
+          "value": "Coach"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Bridge",
+          "validFor": null,
+          "value": "Bridge"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Transfer",
+          "validFor": null,
+          "value": "Transfer"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Callback",
+          "validFor": null,
+          "value": "Callback"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Internal Call",
+          "validFor": null,
+          "value": "InternalCall"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Vendor Parent Call Key",
+      "name": "VendorParentCallKey",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "User ID",
+      "name": "UserId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "User",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "RelatedRecord ID",
+      "name": "RelatedRecordId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "Account",
+        "Case",
+        "Contact",
+        "Lead",
+        "Opportunity"
+      ],
+      "relationshipName": "RelatedRecord",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Vendor Type",
+      "name": "VendorType",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Twilio",
+          "validFor": null,
+          "value": "Twilio"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Custom",
+          "validFor": null,
+          "value": "Custom"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "TwilioTrial",
+          "validFor": null,
+          "value": "TwilioTrial"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "ContactCenter",
+          "validFor": null,
+          "value": "ContactCenter"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "RingCentral",
+          "validFor": null,
+          "value": "RingCentral"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "DialPad",
+          "validFor": null,
+          "value": "DialPad"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "AmazonConnect",
+          "validFor": null,
+          "value": "AmazonConnect"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "AirCall",
+          "validFor": null,
+          "value": "AirCall"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Conference Key",
+      "name": "ConferenceKey",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "VoiceCallRecording ID",
+      "name": "CallRecordingId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "VoiceCallRecording"
+      ],
+      "relationshipName": "CallRecording",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Caller Id",
+      "name": "CallerIdType",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "User",
+          "validFor": null,
+          "value": "VendorLine"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Company",
+          "validFor": null,
+          "value": "CompanyNumber"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Local Presence",
+          "validFor": null,
+          "value": "LocalPresence"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Custom Caller Id",
+          "validFor": null,
+          "value": "CustomCallerId"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Is Call Recorded",
+      "name": "IsRecorded",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Caller ID",
+      "name": "CallerId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "ConversationParticipant"
+      ],
+      "relationshipName": "Caller",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Recipient ID",
+      "name": "RecipientId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "ConversationParticipant"
+      ],
+      "relationshipName": "Recipient",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Previous Call ID",
+      "name": "PreviousCallId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "VoiceCall"
+      ],
+      "relationshipName": "PreviousCall",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Next Call ID",
+      "name": "NextCallId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "VoiceCall"
+      ],
+      "relationshipName": "NextCall",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Call Accepted",
+      "name": "CallAcceptDateTime",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Call Entered Queue",
+      "name": "CallQueuedDateTime",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Call Center ID",
+      "name": "CallCenterId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "CallCenter"
+      ],
+      "relationshipName": "CallCenter",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Conversation ID",
+      "name": "ConversationId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "Conversation"
+      ],
+      "relationshipName": "Conversation",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": "plaintextarea",
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Description",
+      "name": "Description",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "textarea"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Call Resolution",
+      "name": "CallResolution",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Resolved",
+          "validFor": null,
+          "value": "Resolved"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Customer Hold Duration",
+      "name": "CustomerHoldDuration",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "int"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Longest Hold Duration",
+      "name": "LongestHoldDuration",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "int"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Number Of Holds",
+      "name": "NumberOfHolds",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "int"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Queue Name",
+      "name": "QueueName",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Activity ID",
+      "name": "ActivityId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "Task"
+      ],
+      "relationshipName": "Activity",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Call Connected",
+      "name": "CallConnectDateTime",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "CallCoachingMediaProvider ID",
+      "name": "MediaProviderId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "CallCoachingMediaProvider"
+      ],
+      "relationshipName": "MediaProvider",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Source Type",
+      "name": "SourceType",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Sales"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": null,
+          "validFor": null,
+          "value": "Service"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Messaging User ID",
+      "name": "EndUserId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "MessagingEndUser"
+      ],
+      "relationshipName": "EndUser",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Mean Opinion Score",
+      "name": "QualityScore",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "double"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Call Origin",
+      "name": "CallOrigin",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Preview",
+          "validFor": null,
+          "value": "Preview"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Progressive",
+          "validFor": null,
+          "value": "Progressive"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Voicemail",
+          "validFor": null,
+          "value": "Voicemail"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Disconnect Reason",
+      "name": "DisconnectReason",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    }
+  ],
+  "label": "Voice Call",
+  "childRelationships": [
+    {
+      "cascadeDelete": true,
+      "childSObject": "AIInsightValue",
+      "deprecatedAndHidden": false,
+      "field": "SobjectLookupValueId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "AIRecordInsight",
+      "deprecatedAndHidden": false,
+      "field": "TargetId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "AttachedContentDocument",
+      "deprecatedAndHidden": false,
+      "field": "LinkedEntityId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "AttachedContentDocuments",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "CombinedAttachment",
+      "deprecatedAndHidden": false,
+      "field": "ParentId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "CombinedAttachments",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "ContentDocumentLink",
+      "deprecatedAndHidden": false,
+      "field": "LinkedEntityId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "ContentDocumentLinks",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ContentDocumentLinkChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "LinkedEntityId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ContentVersion",
+      "deprecatedAndHidden": false,
+      "field": "FirstPublishLocationId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "ContentVersionChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "FirstPublishLocationId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "ConversationEntry",
+      "deprecatedAndHidden": false,
+      "field": "ConversationId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "ConversationEntries",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "EntitySubscription",
+      "deprecatedAndHidden": false,
+      "field": "ParentId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "FeedSubscriptionsForEntity",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "FeedComment",
+      "deprecatedAndHidden": false,
+      "field": "ParentId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "FeedItem",
+      "deprecatedAndHidden": false,
+      "field": "ParentId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "FlowExecutionErrorEvent",
+      "deprecatedAndHidden": false,
+      "field": "ContextRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "FlowRecordRelation",
+      "deprecatedAndHidden": false,
+      "field": "RelatedRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "NetworkActivityAudit",
+      "deprecatedAndHidden": false,
+      "field": "ParentEntityId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "ParentEntities",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "NetworkFeedResponseMetric",
+      "deprecatedAndHidden": false,
+      "field": "ParentRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "RecordAction",
+      "deprecatedAndHidden": false,
+      "field": "RecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "RecordActions",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "RecordActionHistory",
+      "deprecatedAndHidden": false,
+      "field": "ParentRecordId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "RecordActionHistories",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "VoiceCall",
+      "deprecatedAndHidden": false,
+      "field": "NextCallId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "VoiceCall",
+      "deprecatedAndHidden": false,
+      "field": "PreviousCallId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "VoiceCallChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "NextCallId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "VoiceCallChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "PreviousCallId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "VoiceCallFeed",
+      "deprecatedAndHidden": false,
+      "field": "ParentId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "Feeds",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "VoiceCallRecording",
+      "deprecatedAndHidden": false,
+      "field": "VoiceCallId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "VoiceCallRecordingChangeEvent",
+      "deprecatedAndHidden": false,
+      "field": "VoiceCallId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": null,
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "VoiceCallShare",
+      "deprecatedAndHidden": false,
+      "field": "ParentId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "Shares",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": false,
+      "childSObject": "VoiceChnlInteractionEvent",
+      "deprecatedAndHidden": false,
+      "field": "ContextId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "Contexts",
+      "restrictedDelete": false
+    },
+    {
+      "cascadeDelete": true,
+      "childSObject": "VoiceChnlInteractionEvent",
+      "deprecatedAndHidden": false,
+      "field": "SourceId",
+      "junctionIdListNames": [],
+      "junctionReferenceTo": [],
+      "relationshipName": "Sources",
+      "restrictedDelete": false
+    }
+  ],
+  "custom": false,
+  "name": "VoiceCall",
+  "queryable": true
+}

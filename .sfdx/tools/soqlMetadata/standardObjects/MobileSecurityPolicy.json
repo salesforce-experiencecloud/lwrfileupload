@@ -1,0 +1,770 @@
+{
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Mobile Security Policy ID",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Deleted",
+      "name": "IsDeleted",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Name",
+      "name": "DeveloperName",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Master Language",
+      "name": "Language",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "English",
+          "validFor": null,
+          "value": "en_US"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "German",
+          "validFor": null,
+          "value": "de"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Spanish",
+          "validFor": null,
+          "value": "es"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "French",
+          "validFor": null,
+          "value": "fr"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Italian",
+          "validFor": null,
+          "value": "it"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Japanese",
+          "validFor": null,
+          "value": "ja"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Swedish",
+          "validFor": null,
+          "value": "sv"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Korean",
+          "validFor": null,
+          "value": "ko"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Chinese (Traditional)",
+          "validFor": null,
+          "value": "zh_TW"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Chinese (Simplified)",
+          "validFor": null,
+          "value": "zh_CN"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Portuguese (Brazil)",
+          "validFor": null,
+          "value": "pt_BR"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Dutch",
+          "validFor": null,
+          "value": "nl_NL"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Danish",
+          "validFor": null,
+          "value": "da"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Thai",
+          "validFor": null,
+          "value": "th"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Finnish",
+          "validFor": null,
+          "value": "fi"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Russian",
+          "validFor": null,
+          "value": "ru"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Spanish (Mexico)",
+          "validFor": null,
+          "value": "es_MX"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Norwegian",
+          "validFor": null,
+          "value": "no"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Label",
+      "name": "MasterLabel",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Namespace Prefix",
+      "name": "NamespacePrefix",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Created Date",
+      "name": "CreatedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Created By ID",
+      "name": "CreatedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "CreatedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Last Modified Date",
+      "name": "LastModifiedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Last Modified By ID",
+      "name": "LastModifiedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "LastModifiedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "System Modstamp",
+      "name": "SystemModstamp",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Type",
+      "name": "Type",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Block Jailbroken Device",
+          "validFor": null,
+          "value": "JailbrokenDevice"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Minimum OS Version",
+          "validFor": null,
+          "value": "MinimumOsVersion"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Maximum OS Version",
+          "validFor": null,
+          "value": "MaximumOsVersion"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Minimum Security Patch Version",
+          "validFor": null,
+          "value": "MinimumSecurityPatchVersion"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Block Man In The Middle Attack",
+          "validFor": null,
+          "value": "ManInMiddle"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Minimum Application Version",
+          "validFor": null,
+          "value": "MinimumAppVersion"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Minimum Application Version",
+          "validFor": null,
+          "value": "MininumAppVersion"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Maximum Application Version",
+          "validFor": null,
+          "value": "MaximumAppVersion"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Require Device Passcode",
+          "validFor": null,
+          "value": "DevicePasscode"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Blocked Device List",
+          "validFor": null,
+          "value": "BlockedDeviceList"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Block Custom Keyboard",
+          "validFor": null,
+          "value": "BlockCustomKeyboard"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Block File Backup",
+          "validFor": null,
+          "value": "BlockFileBackup"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Block 3D Touch",
+          "validFor": null,
+          "value": "Block3dTouch"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Block Screenshot",
+          "validFor": null,
+          "value": "Screenshot"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Log Screenshot",
+          "validFor": null,
+          "value": "LogScreenshot"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Log Email",
+          "validFor": null,
+          "value": "LogEmail"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Log Phone Call",
+          "validFor": null,
+          "value": "LogPhonecall"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Log SMS",
+          "validFor": null,
+          "value": "LogTextmessage"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Log Security Policy Evaluation Result",
+          "validFor": null,
+          "value": "LogPolicyResult"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Block Microphone",
+          "validFor": null,
+          "value": "BlockMicrophone"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Block Camera",
+          "validFor": null,
+          "value": "BlockCamera"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Malware Detection",
+          "validFor": null,
+          "value": "MalwareDetection"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Disable URL Caching",
+          "validFor": null,
+          "value": "DisableUrlCaching"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Maximum Days Offline Without Policy Refresh",
+          "validFor": null,
+          "value": "MaxOffline"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Log Out User After Device Restart",
+          "validFor": null,
+          "value": "LogoutAfterRestart"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Log Out User After Changing Biometric Login Data",
+          "validFor": null,
+          "value": "LogoutOnBiometricChange"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Block OS Share Actions",
+          "validFor": null,
+          "value": "BlockOsSharing"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Mobile Browser URI Scheme",
+          "validFor": null,
+          "value": "BrowserUriScheme"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Check Biometric Login Data",
+          "validFor": null,
+          "value": "CheckBiometric"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Block Contacts",
+          "validFor": null,
+          "value": "BlockContacts"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Block Calendar",
+          "validFor": null,
+          "value": "BlockCalendar"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Phone Call Application Handler",
+          "validFor": null,
+          "value": "PhonecallUriScheme"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Allowed Device List",
+          "validFor": null,
+          "value": "AllowedDeviceList"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Log Certificate Pinning",
+          "validFor": null,
+          "value": "LogCertPin"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Severity Level",
+      "name": "SeverityLevel",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Warn",
+          "validFor": null,
+          "value": "Warn"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Error",
+          "validFor": null,
+          "value": "Error"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Critical",
+          "validFor": null,
+          "value": "Critical"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Info",
+          "validFor": null,
+          "value": "Info"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Effective Date",
+      "name": "EffectiveDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Rule Value Type",
+      "name": "RuleValueType",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Boolean",
+          "validFor": null,
+          "value": "Boolean"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Text",
+          "validFor": null,
+          "value": "Text"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Text List",
+          "validFor": null,
+          "value": "TextList"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Rule Value",
+      "name": "RuleValue",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Is Enabled",
+      "name": "IsEnabled",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Mobile Platform",
+      "name": "MobilePlatform",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "Android",
+          "validFor": null,
+          "value": "Android"
+        },
+        {
+          "active": true,
+          "defaultValue": false,
+          "label": "iOS",
+          "validFor": null,
+          "value": "iOS"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Mobile Assignment ID",
+      "name": "MobileSecurityAssignmentId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "MobileSecurityAssignment"
+      ],
+      "relationshipName": "MobileSecurityAssignment",
+      "sortable": true,
+      "type": "reference"
+    }
+  ],
+  "label": "Mobile Security Policy",
+  "childRelationships": [],
+  "custom": false,
+  "name": "MobileSecurityPolicy",
+  "queryable": true
+}
