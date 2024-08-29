@@ -1,0 +1,16 @@
+<template>
+    <template lwc:if={showFileUpload}>
+        <lightning-file-upload
+            label={label}
+            name="fileUploader"
+            accept={acceptedFormatsArray}
+            record-id={recordId}
+            file-field-name={fieldName}
+            file-field-value={fieldValue}
+            onuploadfinished={handleUploadFinished}
+            multiple={multiple}
+            disabled={disabled}
+        >
+        </lightning-file-upload>
+    </template>
+</template>

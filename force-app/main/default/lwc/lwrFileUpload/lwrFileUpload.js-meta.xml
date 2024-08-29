@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>62.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>LWR File Upload</masterLabel>
+    <targets>
+        <target>lightning__FlowScreen</target>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__FlowScreen">
+            <property name="acceptedFormats" type="String" label="Accepted Formats" default="'.pdf', '.jpg', '.png'" role="inputOnly" 
+                description="Comma-separated array of strings representing accepted file formats by extension name."/>
+
+            <property name="label" type="String" label="Label" default="Attach File(s)" role="inputOnly" 
+                description="Component label"/>
+
+            <property name="recordId" type="String" label="Record Id" default="" role="inputOnly" 
+                description="Record Id related to file being uploaded. Only works for authenticated users."/>
+
+            <property name="fieldName" type="String" label="File Field Name" default="" role="inputOnly" 
+                description="Custom Field Name on the Content Version object to store the File Field Value in."/>
+
+            <property name="fieldValue" type="String" label="File Field Value" default="" role="inputOnly" 
+                description="Field Value to store in the File Field Name of the Content Version object."/>
+
+            <property name="multiple" type="Boolean" label="Allow uploading multiple files?" default="false" role="inputOnly" 
+                description="Check to allow upload of multiple files, otherwise selection is limited to 1 file."/>
+
+            <property name="disableAfterSuccessfulUpload" type="Boolean" label="Disable after successful upload?" default="false" role="inputOnly" 
+                description="Check to disable file upload component after the successful upload of files."/>
+
+            <property name="navigateNextOnSuccessfulUpload" type="Boolean" label="Navigate to Next screen after successful upload?" default="false" role="inputOnly" 
+                description="Check to navigate the flow to the next screen after successful upload of files."/>
+
+
+            <property name="numberOfUploadedFiles" type="Integer" label="Number of Files Uploaded" role="outputOnly" />
+            
+            <property name="uploadedFiles" type="@salesforce/schema/ContentVersion[]" label="Files Successfully Uploaded" role="outputOnly" />
+
+        </targetConfig>
+        <targetConfig targets="lightningCommunity__Default">
+            <property name="acceptedFormats" type="String" label="Accepted Formats" default="'.pdf', '.jpg', '.png'" 
+                description="Comma-separated array of strings representing accepted file formats by extension name."/>
+
+            <property name="label" type="String" label="Label" default="Attach File(s)"
+                description="Component label"/>
+
+            <property name="recordId" type="String" label="Record Id" default=""
+                description="Record Id related to file being uploaded. Only works for authenticated users."/>
+
+            <property name="fieldName" type="String" label="File Field Name" default=""
+                description="Custom Field Name on the Content Version object to store the File Field Value in."/>
+
+            <property name="fieldValue" type="String" label="File Field Value" default=""
+                description="Field Value to store in the File Field Name of the Content Version object."/>
+
+            <property name="multiple" type="Boolean" label="Allow uploading multiple files?" default="false" 
+                description="Check to allow upload of multiple files, otherwise selection is limited to 1 file."/>
+
+            <property name="disableAfterSuccessfulUpload" type="Boolean" label="Disable after successful upload?" default="false"  
+                description="Check to disable file upload component."/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>
