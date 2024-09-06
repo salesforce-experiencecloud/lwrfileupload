@@ -3,6 +3,9 @@
     <apiVersion>62.0</apiVersion>
     <isExposed>true</isExposed>
     <masterLabel>LWR File Upload</masterLabel>
+    <capabilities>
+        <capability>lightningCommunity__RelaxedCSP</capability>
+    </capabilities>
     <targets>
         <target>lightning__FlowScreen</target>
         <target>lightningCommunity__Page</target>
@@ -34,10 +37,13 @@
             <property name="navigateNextOnSuccessfulUpload" type="Boolean" label="Navigate to Next screen after successful upload?" default="false" role="inputOnly" 
                 description="Check to navigate the flow to the next screen after successful upload of files."/>
 
+            <property name="urlToNavigateToAfterSuccessfulUpload" type="String" label="URL To Navigate to After Successful Upload" default="" role="inputOnly" 
+                description="Leave blank to not navigate anywhere, otherwise provide a url to navigate to after successful file upload."/>
+
 
             <property name="numberOfUploadedFiles" type="Integer" label="Number of Files Uploaded" role="outputOnly" />
             
-            <property name="uploadedFiles" type="@salesforce/schema/ContentVersion[]" label="Files Successfully Uploaded" role="outputOnly" />
+            <property name="uploadedFiles" type="@salesforce/schema/ContentVersion[]" label="List of Files Successfully Uploaded" role="outputOnly" />
 
         </targetConfig>
         <targetConfig targets="lightningCommunity__Default">
@@ -61,6 +67,9 @@
 
             <property name="disableAfterSuccessfulUpload" type="Boolean" label="Disable after successful upload?" default="false"  
                 description="Check to disable file upload component."/>
+
+            <property name="urlToNavigateToAfterSuccessfulUpload" type="String" label="URL To Navigate to After Successful Upload"  
+                description="Leave blank to not navigate anywhere, otherwise provide a url to navigate to after successful file upload."/>
         </targetConfig>
     </targetConfigs>
 </LightningComponentBundle>

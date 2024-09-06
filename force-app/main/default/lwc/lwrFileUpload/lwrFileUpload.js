@@ -42,6 +42,8 @@ export default class LwrFileUpload extends LightningElement {
 
     @api disableAfterSuccessfulUpload = false;
 
+    @api urlToNavigateToAfterSuccessfulUpload;
+
     handleUploadFinished(e) {
         this.uploadedFiles = [];
         let tmpUploadedFiles = e.detail.files;
@@ -71,6 +73,26 @@ export default class LwrFileUpload extends LightningElement {
             this.dispatchEvent(navigateNextEvent);
         }
 
+        if(this.urlToNavigateToAfterSuccessfulUpload !== undefined && this.urlToNavigateToAfterSuccessfulUpload !== null
+            && this.urlToNavigateToAfterSuccessfulUpload.trim() !== '')
+        {
+            this.doLinkNavigate(this.urlToNavigateToAfterSuccessfulUpload);
+        }
+
+    }
+
+    doLinkNavigate(url, target = '')
+    {
+        if(url !== undefined && url !== null && url.trim() !== '')
+        {
+            let newLink = document.createElement('a');
+            newLink.setAttribute('href',url);
+            if(target !== undefined && target !== null && target.trim() !== '')
+            {
+                newLink.setAttribute('target', target);
+            }
+            newLink.click();
+        }
     }
 
 }
