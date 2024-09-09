@@ -4,6 +4,7 @@
         <members>*</members>
         <name>LightningComponentBundle</name>
     </types>
+    <!--
     <types>
         <members>ContentVersionTriggerHandler</members>
         <name>ApexClass</name>
@@ -12,5 +13,14 @@
         <members>ContentVersionTrigger</members>
         <name>ApexTrigger</name>
     </types>
+    <types>
+        <members>*</members>
+        <name>FlowDefinition</name>
+    </types>
+     <types>
+        <members>*</members>
+        <name>Flow</name>
+    </types>
+    -->
     <version>61.0</version>
 </Package>
